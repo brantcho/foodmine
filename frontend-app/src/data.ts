@@ -1,5 +1,5 @@
 import { Food } from './app/shared/models/Food';
-
+import { Tag } from './app/shared/models/Tag';
 export const sample_foods: Food[] = [
   {
     id: '1',
@@ -10,7 +10,7 @@ export const sample_foods: Food[] = [
     origins: ['Cameroun'],
     stars: 4.8,
     imageUrl: 'assets/food-ndole.jpg',
-    tags: ['Traditionnel', 'Ndolé', 'Dîner'],
+    tags: ['Traditionnel', 'Dîner'],
   },
   {
     id: '2',
@@ -76,7 +76,7 @@ export const sample_foods: Food[] = [
     origins: ['Cameroun'],
     stars: 4.8,
     imageUrl: 'assets/food-taro.jpg',
-    tags: ['Traditionnel', 'Taro', 'Dîner'],
+    tags: ['Traditionnel', 'Dîner'],
   },
   {
     id: '8',
@@ -89,4 +89,57 @@ export const sample_foods: Food[] = [
     imageUrl: 'assets/food-beignetsharicots.jpg',
     tags: ['StreetFood', 'Beignets', 'Snack'],
   },
+  {
+    id: '9',
+    name: 'Okok',
+    cookTime: '2-3 heures',
+    price: 14,
+    favorite: true,
+    origins: ['Cameroun'],
+    stars: 4.8,
+    imageUrl: 'assets/food-okok.jpg',
+    tags: ['Traditionnel', 'Dîner', 'Végétarien'],
+  },
+  {
+    id: '10',
+    name: 'Sangah',
+    cookTime: '2 heures',
+    price: 12,
+    favorite: true,
+    origins: ['Cameroun'],
+    stars: 4.6,
+    imageUrl: 'assets/food-sangah.jpg',
+    tags: ['Traditionnel', 'Dîner','Végétarien'],
+  },
+  {
+    id: '11',
+    name: 'Kondre',
+    cookTime: '2 heures',
+    price: 12,
+    favorite: true,
+    origins: ['Cameroun'],
+    stars: 4.6,
+    imageUrl: 'assets/food-kondre.jpg',
+    tags: ['Traditionnel', 'Dîner'],
+  },
+  {
+    id: '12',
+    name: 'fufu sauce gombo',
+    cookTime: '2 heures',
+    price: 12,
+    favorite: true,
+    origins: ['Cameroun'],
+    stars: 4.6,
+    imageUrl: 'assets/food-fufu-sauce-gombo.jpg',
+    tags: ['Traditionnel', 'Dîner'],
+  }
 ]
+
+export const sample_tags: Tag[] = [
+  { name: 'All', count: 12 }, // Total de tous les plats listés
+  { name: 'Traditionnel', count: 9 }, // Ndolé et plantains, Eru, Koki, Poisson Braisé, Taro et sauce jaune
+  { name: 'Dîner', count: 10 }, // La plupart sont appropriés pour le dîner
+  { name: 'Festif', count: 1 }, // Poulet DG
+  { name: 'Végétarien', count: 3 }, // Koki
+  { name: 'StreetFood', count: 2 }, // Brochettes de Soya, Beignets Haricots
+];

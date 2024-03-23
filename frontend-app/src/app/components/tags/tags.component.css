@@ -1,0 +1,19 @@
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div a {
+    background-color: #FCD116; /* Jaune, pour attirer l'attention */
+    padding: 0.3rem 1rem;
+    margin: 0.2rem 0.15rem;
+    border-radius: 10rem;
+    font-weight: 600;
+    color: #007A5E; /* Vert, pour le texte, garantissant une bonne visibilité */
+}
+
+a .active {
+    background-color: #CE1126; /* Rouge, pour marquer l'élément actif */
+    color: white; /* Pour le contraste et la lisibilité */
+}
